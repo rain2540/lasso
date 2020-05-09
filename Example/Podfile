@@ -1,4 +1,4 @@
-source 'https://cdn.cocoapods.org/'
+#source 'https://cdn.cocoapods.org/'
 
 platform :ios, '10.0'
 use_frameworks!
@@ -6,14 +6,16 @@ use_frameworks!
 target 'Lasso_Example' do
 
   # Set up SwiftLint
-  pod 'SwiftLint'
-  script_phase :name => 'SwiftLint',
-               :script => "${PODS_ROOT}/SwiftLint/swiftlint" \
-                          " --config ${SRCROOT}/../.swiftlint.yml" \
-                          " --path ${SRCROOT}"
+  #pod 'SwiftLint'
+  #pod 'SwiftLint', :git => 'https://github.com/realm/SwiftLint.git'
+  #script_phase :name => 'SwiftLint',
+               #:script => "${PODS_ROOT}/SwiftLint/swiftlint" \
+                          #" --config ${SRCROOT}/../.swiftlint.yml" \
+                          #" --path ${SRCROOT}"
 
   # WWLayout for easy constraints
-  pod 'WWLayout'
+  #pod 'WWLayout'
+  pod 'WWLayout', :git => 'https://github.com/ww-tech/wwlayout.git'
 
   # Lasso
   pod 'Lasso', :path => '../'
@@ -21,7 +23,8 @@ target 'Lasso_Example' do
 end
 
 target 'Lasso_Tests' do
-  pod 'WWLayout'
+  #pod 'WWLayout'
+  pod 'WWLayout', :git => 'https://github.com/ww-tech/wwlayout.git'
   pod 'Lasso', :path => '../'
 end
 

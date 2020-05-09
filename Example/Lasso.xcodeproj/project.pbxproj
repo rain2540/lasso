@@ -578,7 +578,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				191876CD3C60989C243DAF5D /* [CP] Embed Pods Frameworks */,
-				26451D8F07122B70C26F0DE9 /* [CP-User] SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -756,17 +755,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lasso_Example/Pods-Lasso_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		26451D8F07122B70C26F0DE9 /* [CP-User] SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] SwiftLint";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint --config ${SRCROOT}/../.swiftlint.yml --path ${SRCROOT}";
 			showEnvVarsInLog = 0;
 		};
 		68508589E547BDE64A185A92 /* [CP] Check Pods Manifest.lock */ = {
